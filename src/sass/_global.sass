@@ -1,0 +1,56 @@
+//------ VAR -----//
+
+$main-color: #140907
+$background-color: #F3F3F3
+$skill-bar: #C19800
+$black-section: #242E40
+$white-section: #fff
+
+//----- QUERIES -----//
+$tablet-width: "only screen and (max-width: 768px)"
+$mobile-width: "only screen and (max-width: 425px)"
+
+@mixin tablet
+	@media #{$tablet-width}
+		@content
+
+@mixin mobile
+	@media #{$mobile-width}
+		@content
+
+//----- REUSABLE ELEMENT -----//
+*,*:before,*:after
+	box-sizing: border-box
+html
+	box-sizing: border-box
+body
+	font:
+		family: 'Roboto', sans-serif
+		size: 16px
+	color: $main-color
+	background-image: url('../img/body-bg.png')
+h1,h2,h3
+	text-transform: uppercase
+	letter-spacing: .1em
+p
+	line-height: 1.5
+	font-size: 1rem
+	letter-spacing: 0.05em
+.divider
+	height: 3px
+	background: #312C37
+	border: none
+	display: inline-block
+	margin: 0 0 10px
+.divider-md
+	width: 120px
+.divider-sm
+	width: 60px
+.section-pd-50
+	padding: 30px 50px
+.black-section
+	background-color: $black-section
+
+@include mobile
+	.section-pd-50
+		padding: 30px 20px 30px 30px

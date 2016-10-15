@@ -1,0 +1,39 @@
+#education
+	color: #fff
+	.fa
+		color: $skill-bar
+.heading-wrapper
+	background-color: $background-color
+	display: inline-block
+	padding: 15px 20px
+	margin-bottom: 10px
+	border-radius: 10px 0 10px 0
+	.heading
+		color: $main-color
+		margin: 0
+.edu-loc
+	display: block
+	padding-left: 20px
+	&:last-child
+		margin-bottom: 10px
+.projects
+	width: 200px
+	display: block
+	float: left
+	margin-right: 20px
+	img
+		width: 100%
+.contact-info
+	display: block
+	color: #fff
+	transition: .3s
+	padding: 5px 0
+	&:hover,&:focus
+		color: $skill-bar
+.down
+	display: block
+@include tablet
+	.down
+		display: none
+	.edu-loc
+		display: inline

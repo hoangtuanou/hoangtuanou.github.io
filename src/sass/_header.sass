@@ -1,0 +1,21 @@
+header
+	padding: .5em
+	background-color: $background-color
+.avatar
+	margin-left: 20px
+	img
+		width: 100%
+		max-width: 120px
+.name
+	padding: .8em 0 0
+	h1
+		margin: 10px 0
+		font:
+			size: 1.5rem
+			weight: 500
+	h3
+		text-transform: capitalize
+
+@include mobile
+	.name h1
+		font-size: 1.2rem

@@ -1,0 +1,88 @@
+$mobile-width: "only screen and (max-width: 767px)"
+$tablet-width: "only screen and (max-width: 1200px)"
+
+@mixin tablet()
+	@media #{$tablet-width}
+		@content
+@mixin mobile()
+	@media #{$mobile-width}
+		@content
+
+@include tablet
+	body
+		font-size: 18px
+	.row
+		padding: 0 2%
+	.background-textbox
+		width: 100%
+		padding: 0 2%
+	.step-box:last-child
+		margin-top: 10px
+	.work-step,.work-step:last-of-type
+		margin-bottom: 40px
+	.app-screen
+		width: 50%
+	.city-features
+		font-size: 90%
+	.box
+		padding: 0
+	.plan-box
+		width: 100%
+		margin: 0
+	.map-box
+		height: auto
+	.section-form
+		position: relative
+		width: 100%
+@include mobile
+	h2:after
+		margin-top: 10px
+	h3
+		text-align: center
+	.logo
+		width: 80px
+		height: 80px
+	.btn
+		font-size: 90%
+	.btn-ghost
+		margin-top: 10px
+	.main-nav
+		display: none
+		margin: 0
+		li
+			display: block
+			margin-bottom: 15px
+			margin-right: 25px
+			margin: 0 35px 15px 0
+			a
+				padding: 8px 0
+	.long-copy
+		width: 85%
+		margin: 0 10% 30px
+	.box 
+		.ion-big
+			text-align: center
+		p
+			text-align: justify
+			margin: 0 30px
+	.mobile-menu
+		display: block
+	.sticky 
+		.mobile-menu
+			color: #555
+			margin: 10px
+		.main-nav li a
+			padding: 8px 0
+	.step-box:first-child
+		text-align: center
+	.plan-price,.price-per-meal,.footer-nav,.social-links
+		text-align: center
+	.map
+		height: 300px
+	.contact-form
+		width: 80%
+	footer
+		padding: 50px 30px
+	.social-links
+		float: none
+		margin-top: 10px

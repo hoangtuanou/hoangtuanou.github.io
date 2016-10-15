@@ -1,0 +1,22 @@
+.heading
+	font:
+		size: 1.3rem
+		weight: 600
+	margin: 20px 0 0
+.short-info
+	padding: .5em
+	&:before,&:after
+		content: ''
+		display: block
+		clear: both
+	.fa
+		margin-right: 10px
+		color: $skill-bar
+.white-section
+	background-color: $white-section
+	opacity: .8
+
+@include mobile
+	header
+		text-align: center
+
