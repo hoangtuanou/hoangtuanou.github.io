@@ -7,7 +7,7 @@ $black-section: #242E40
 $white-section: #fff
 
 //----- QUERIES -----//
-$tablet-width: "only screen and (max-width: 768px)"
+$tablet-width: "only screen and (max-width: 1023px)"
 $mobile-width: "only screen and (max-width: 425px)"
 
 @mixin tablet
@@ -50,7 +50,11 @@ p
 	padding: 30px 50px
 .black-section
 	background-color: $black-section
-
+.row
+	margin: 0
+@include tablet
+	.section-pd-50
+		padding: 10px 30px
 @include mobile
 	.section-pd-50
 		padding: 30px 20px 30px 30px
