@@ -23,11 +23,35 @@ html
 				div.name.col-sm-9.col-xs-12
 					h1 Trần Hoàng Anh Tuấn
 					h3 front-end fresher developer
-		.container.white-section.section-pd-50
+		.container.white-section
 			//- ABOUTME
 			section#about-me
-				h2.heading about me
-				hr.divider.divider-md
+				.info
+					.row
+						.col-sm-3
+							p
+								i.fa.fa-user
+								| Man
+							p
+								i.fa.fa-calendar
+								| 19-11-1994
+						.col-sm-4
+							a(href="mailto:hoanganhtuan.ou@gmail.com").contact-info
+								i.fa.fa-envelope-o
+								|hoanganhtuan.ou@gmail.com
+							a(href="http:/www.facebook.com/hoang.tuan.3701779").contact-info
+								i.fa.fa-facebook
+								| http://fb.com/hoangtuan
+						.col-sm-5
+							p
+								i.fa.fa-phone
+								| 01866 779 541
+							p
+								i.fa.fa-map-marker
+								| Đường Lê Đức Thọ, F.13, Q.Gò Vấp
+				hr.divider
+				.heading-wrapper
+					h2.heading about me
 				.short-info
 					p  
 						i.fa.fa-angle-right
@@ -38,25 +62,13 @@ html
 					p  
 						i.fa.fa-angle-right
 						| Research new technologies, self-trained and sharing knowleadge with others. Responsility for created products.
-				.info
-					h2.heading info
-					hr.divider.divider-sm
-					.short-info
-						p
-							i.fa.fa-angle-right
-							| BIRTHDAY : 19.11.1994
-						p
-							i.fa.fa-angle-right
-							| LANGUAGE : Vietnamese, English, Japanese(N5)
-						p
-							i.fa.fa-angle-right
-							| ADDRESS : 72/1/11, Đường số 3, F.13, Q.Gò Vấp
+				
 			//- SKILLS
 			section#skill-list
-				h2.heading my skills
-				hr.divider.divider-md
 				.row
 					.col-sm-6
+						.heading-wrapper
+							h2.heading my skill
 						.skill
 							.skill-name html/css/js
 							.progess.p4
@@ -75,7 +87,6 @@ html
 								span
 								span
 								span
-					.col-sm-6
 						.skill
 							.skill-name photoshop
 							.progess.p3
@@ -94,71 +105,47 @@ html
 								span
 								span
 								span
-				h4
-					i.fa.fa-certificate
-					|Hands-on experience:
-				.row.center
-					.col-sm-3
-						img(src="src/img/bootstrap.png")
-					.col-sm-3
-						img(src="src/img/sass.png")
-					.col-sm-3
-						img(src="src/img/jquery.png")
-					.col-sm-3
-						img(src="src/img/gulp.png")
-		.container.black-section.section-pd-50
-			section#education
-				.row
-					.col-sm-7
+						h4
+							i.fa.fa-certificate
+							|Hands-on experience:
+						.text-center
+							.col-sm-6
+								img(src="src/img/bootstrap.png")
+							.col-sm-6
+								img(src="src/img/sass.png")
+							.col-sm-6
+								img(src="src/img/jquery.png")
+							.col-sm-6
+								img(src="src/img/gulp.png")
+					.col-sm-6
 						.heading-wrapper
 							h2.heading education
-						.short-info
-							p
-								i.fa.fa-clock-o
-								|2010 - 2012 
-								br 
-								span.edu-loc Nguyễn Công Trứ High School
-							p
-								i.fa.fa-clock-o
-								|2012 - 2016 
-								br 
-								span.edu-loc Infomation Technology @ HCMC Open Universiry
-							p
-								i.fa.fa-clock-o
-								|06.2016 - Present
-								br 
-								span.edu-loc Selt-study Front-end Development
-					.col-sm-5
-						.heading-wrapper
-							h2.heading projects
-						.short-info
+						p
+							i.fa.fa-clock-o
+							|2010 - 2012 
+							br 
+							span.edu-loc Nguyễn Công Trứ High School
+						p
+							i.fa.fa-clock-o
+							|2012 - 2016 
+							br 
+							span.edu-loc Infomation Technology @ HCMC Open Universiry
+						p
+							i.fa.fa-clock-o
+							|06.2016 - Present
+							br 
+							span.edu-loc Selt-study Front-end Development
+						.projects-section
+							.heading-wrapper
+								h2.heading projects
 							a(href="projects/laresto/index.html").projects
 								img(src="src/img/laresto.png")
 							a(href="projects/omnifood/index.html").projects
 								img(src="src/img/omnifood.png")
-					.col-sm-7
-						.heading-wrapper
-							h2.heading hobbies
-						.short-info
-							p
-								i.fa.fa-puzzle-piece
-								|Play video game, football. Hang out with friend.
-							p
-								i.fa.fa-puzzle-piece
-								|Watching movies.
-					.col-sm-5
-						.heading-wrapper
-							h2.heading contacts
-						.short-info
-							p
-								i.fa.fa-phone
-								|01866 779 541
-							a(href="mailto:hoanganhtuan.ou@gmail.com").contact-info
-								i.fa.fa-envelope-o
-								|hoanganhtuan.ou@gmail.com
-							a(href="http:/www.facebook.com/hoang.tuan.3701779").contact-info
-								i.fa.fa-facebook
-								|Hoang Tuan
+					
+			hr.divider
+			footer Handcrafted by HoangTuan &copy; 2016. All rights reserved.
+
 
 
 
