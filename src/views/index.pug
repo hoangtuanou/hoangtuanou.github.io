@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport",content="width=device-width,initial-scale=1.0")
+    title Hoang Tuan Resume
+
+    //- FONTAWESOME
+    link(rel="stylesheet",href="https://use.fontawesome.com/releases/v5.7.2/css/all.css", integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr", crossorigin="anonymous")
+    //- VENDORS
+    link(rel="stylesheet",href="vendors/css/bootstrap.min.css")
+    link(rel="stylesheet",href="vendors/css/normalize.css")
+    link(rel="stylesheet",href="vendors/css/reset.css")
+    //- INDEX.CSS
+    link(rel="stylesheet",href="src/css/index.css")
+  body
+    include ./includes/head.pug
+    .container
+      //- CONTACT INFO
+      section.section-wrapper.white-section
+        include ./includes/contact.pug
+      //- ABOUTME
+      section.section-wrapper.white-section
+        include ./includes/about.pug
+      //- SKILLS
+      section.section-wrapper.white-section
+        include ./includes/skill.pug
+      section.section-wrapper.white-section
+        include ./includes/empHistory.pug
+          
+      hr.divider
+      footer Handcrafted by HoangTuan &copy; 2016. All rights reserved.

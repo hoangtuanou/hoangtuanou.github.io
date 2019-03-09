@@ -1,29 +1,35 @@
 header
-	padding: .5em
-	max-width: 1000px
-	margin: 0 auto
-	background-color: $background-color
-	box-shadow: 0px 5px 10px rgba(0,0,0,.5)
+  padding: .5em
+  max-width: 1000px
+  margin: 0 auto
 .avatar
-	margin-left: 20px
-	img
-		width: 100%
-		max-width: 100px
+  // margin-left: 20px
+  border-radius: 10px
+  img
+    width: 100%
+    max-width: 100px
+    border-radius: 15px
+    box-shadow: 0px 5px 10px $gray-color
 .name
-	h1
-		margin: 10px 0
-		font:
-			size: 2rem
-	h3
-		text-transform: capitalize
-		font-size: 1.2rem
-
+  h1
+    margin: 10px 0
+    font:
+      size: 2rem
+      family: DejaVuSans
+      weight: bolder
+    color: $main-color
+  h3
+    text-transform: capitalize
+    font-size: 1.2rem
+.contact-wrapper
+  .fas, .fab
+    margin-right: 10px
 /*------ RESPONSIVE ------*/
 @include mobile
-	.name 
-		h1
-			font-size: 1.2rem
-		h3
-			font-size: 1rem
-	.avatar
-		margin-left: 0
+  .name 
+    h1
+      font-size: 1.4rem
+    h3
+      font-size: 1rem
+  .avatar
+    margin-left: 0

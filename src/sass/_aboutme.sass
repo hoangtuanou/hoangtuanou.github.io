@@ -1,29 +1,23 @@
-#about-me
-	padding: 20px 0
-.heading
-	font:
-		size: 1.3rem
-		weight: 600
-	margin: 20px 0 0
-.info
-	margin: 1em 0
+// .heading
+//   font:
+//     size: 1.3rem
+//     weight: 600
+//   margin: 20px 0 0
 .short-info
-	&:before,&:after
-		content: ''
-		display: block
-		clear: both
-	.fa
-		margin-right: 10px
-		color: $main-color
-.white-section
-	background-color: $white-section
-	opacity: .8
-
+  p
+    margin-bottom: 15px
+  &:before,&:after
+    content: ''
+    display: block
+    clear: both
+  .fa
+    margin-right: 10px
+    color: $text-color
 /*------ RESPONSIVE ------*/
 @include tablet
-	.heading
-		margin: 0
+  // .heading
+  //   margin: 0
 @include mobile
-	header
-		text-align: center
+  header
+    text-align: center
 

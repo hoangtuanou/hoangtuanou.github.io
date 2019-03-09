@@ -1,37 +1,47 @@
 #skill-list
-	margin-bottom: 1em
-	h4
-		margin: 20px 0
-	.fa
-		color: $background-color
-.skill-name
-	margin: 10px 0
-	font-size: 1rem
-	text-transform: uppercase
-.skill
-	margin: 0 0 20px 10px
-.progess
-	width: 100%
-	height: 5px
-	border-radius: 10px
-	span
-		width: 14%
-		height: inherit
-		background-color: $skill-bar
-		display: block
-		float: left
-		margin-right: 2%
-.p4 span:nth-child(n+5)
-	background-color: $gray-color
-.p5 span:nth-child(n+6)
-	background-color: $gray-color
-.p3 span:nth-child(n+4)
-	background-color: $gray-color
+  margin-bottom: 1em
+  h4
+    margin: 20px 0
+  .fa
+    color: $main-color
+.skill-group
+  padding-bottom: 10px
+  .skill-name
+    display: block
+    margin: 10px 20px 20px 0
+    font-size: 1rem
+    font-weight: 900
+    text-transform: uppercase
+  .skill
+    display: block
+    line-height: 30px
+  .fa-xs
+    margin-right: 10px
+    font-size: 0.5rem
+// .skill
+// 	margin: 0 0 20px 10px
+// .progess
+// 	width: 100%
+// 	height: 5px
+// 	border-radius: 10px
+// 	span
+// 		width: 14%
+// 		height: inherit
+// 		background-color: $skill-bar
+// 		display: block
+// 		float: left
+// 		margin-right: 2%
+// .p4 span:nth-child(n+5)
+// 	background-color: $gray-color
+// .p5 span:nth-child(n+6)
+// 	background-color: $gray-color
+// .p3 span:nth-child(n+4)
+// 	background-color: $gray-color
 
 /*------ RESPONSIVE ------*/
 @include mobile
-	.row
-		margin-right: 0
-	.center
-		text-align: center
-	
+  .row
+    margin-right: 0
+  .center
+    text-align: center
+  
