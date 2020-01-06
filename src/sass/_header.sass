@@ -17,15 +17,21 @@ header
       size: 2rem
       family: DejaVuSans
       weight: bolder
-    color: $main-color
   h3
     text-transform: capitalize
     font-size: 1.2rem
+    color: $main-color
+  hr
+    margin: 10px 0
 .contact-wrapper
+  display: flex
+  justify-content: space-between
   .fas, .fab
     margin-right: 10px
 /*------ RESPONSIVE ------*/
 @include mobile
+  .contact-wrapper
+    flex-direction: column
   .name 
     h1
       font-size: 1.4rem
