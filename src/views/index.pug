@@ -12,22 +12,20 @@ html
     link(rel="stylesheet",href="vendors/css/reset.css")
     //- INDEX.CSS
     link(rel="stylesheet",href="src/css/index.css")
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js", integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/", crossorigin="anonymous")
-    script(src="src/js/html2canvas.min.js")
+    //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js", integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/", crossorigin="anonymous")
+    //- script(src="src/js/html2canvas.min.js")
   body
-    div#content
+    div#content.container
       include ./includes/head.pug
-      .container
-        //- CONTACT INFO
-        section.section-wrapper.white-section
-          include ./includes/contact.pug
-        //- SKILLS
-        section.section-wrapper.white-section
-          include ./includes/skill.pug
-        section.section-wrapper.white-section
-          include ./includes/empHistory.pug
-            
+      //- CONTACT INFO
+      //- section.section-wrapper.white-section
+      //-   include ./includes/contact.pug
+      //- SKILLS
+      section.section-wrapper.white-section
+        include ./includes/skill.pug
+      section.section-wrapper.white-section
+        include ./includes/empHistory.pug
       //- hr.divider
       //- footer Handcrafted by HoangTuan &copy; 2016. All rights reserved.
     //- div#editor

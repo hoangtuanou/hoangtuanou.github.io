@@ -1,11 +1,17 @@
-.container.center
-  .section-wrapper.white-section.row
-    .avatar.col-sm-2.col-xs-12
-      img(src="src/assets/images/avatar-1.jpg")
-    .name.col-sm-9.col-xs-12
-      div
-        h1 Trần Hoàng Anh Tuấn
-        h3 frontend developer
-      hr.divider
-      .about-me
-        include ./about.pug
+.section-wrapper.white-section.row
+  //- .avatar.col-sm-2.col-xs-12
+  //-   img(src="src/assets/images/avatar-1.jpg")
+  .info
+    h1 Tran Hoang Anh Tuan
+    h3 Frontend Developer
+    .contact-info
+      span
+        a(href="mailto:hoanganhtuan.ou@gmail.com").mail
+          i.fas.fa-envelope
+        i.fab.fa-skype
+        | : hoanganhtuan.ou@gmail.com
+      span
+        i.fas.fa-mobile-alt
+        | : (+84) 931 140 542
+  hr.divider
+  include ./about.pug

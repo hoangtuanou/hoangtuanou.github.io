@@ -8,91 +8,72 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/reset.css">
     <link rel="stylesheet" href="src/css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
-    <script src="src/js/html2canvas.min.js"></script>
   </head>
   <body>
-    <div id="content">
-      <div class="container center">
-        <div class="section-wrapper white-section row">
-          <div class="avatar col-sm-2 col-xs-12"><img src="src/assets/images/avatar-1.jpg"></div>
-          <div class="name col-sm-9 col-xs-12">
-            <div>
-              <h1>Trần Hoàng Anh Tuấn</h1>
-              <h3>frontend developer</h3>
-            </div>
-            <hr class="divider">
-            <div class="about-me">
-              <div class="short-info">
-                <p> <i class="fas fa-circle fa-xs"></i>A Front-end developer with several years of experience, mainly working on ReactJS ecosystem.</p>
-                <p> <i class="fas fa-circle fa-xs"></i>A person who play or work well as a member of a team, be able doing some mentoring tasks and code reviewing for other members.</p>
-                <p> <i class="fas fa-circle fa-xs"></i>Researching new technologies is what I am passionate about, self-trained and sharing knowleadge with others.</p>
-              </div>
-            </div>
-          </div>
+    <div class="container" id="content">
+      <div class="section-wrapper white-section row">
+        <div class="info">
+          <h1>Tran Hoang Anh Tuan</h1>
+          <h3>Frontend Developer</h3>
+          <div class="contact-info"><span><a class="mail" href="mailto:hoanganhtuan.ou@gmail.com"><i class="fas fa-envelope"></i></a><i class="fab fa-skype"></i>: hoanganhtuan.ou@gmail.com</span><span><i class="fas fa-mobile-alt"></i>: (+84) 931 140 542</span></div>
+        </div>
+        <hr class="divider">
+        <div class="short-info">
+          <p> <i class="fas fa-circle fa-xs"></i>A Front-end developer with several years of experience, mainly working on ReactJS ecosystem.</p>
+          <p> <i class="fas fa-circle fa-xs"></i>A person who play or work well as a member of a team, be able doing some mentoring tasks and code reviewing for other members.</p>
+          <p> <i class="fas fa-circle fa-xs"></i>Researching new technologies is what I am passionate about, self-trained and sharing knowleadge with others.</p>
         </div>
       </div>
-      <div class="container">
-        <section class="section-wrapper white-section">
-          <div class="row contact-wrapper"><a class="contact-info" href="mailto:hoanganhtuan.ou@gmail.com"><i class="fas fa-envelope"></i>hoanganhtuan.ou@gmail.com</a><a class="contact-info" href="https://www.facebook.com/hoang.tuan.3701779"><i class="fab fa-facebook-square"></i>Hoang Tuan</a>
-            <p><i class="fas fa-mobile-alt"></i>0931 140 542</p>
-            <p><i class="fas fa-map-marker-alt"></i>Q.Gò Vấp, TP.HCM</p>
+      <section class="section-wrapper white-section">
+        <h2 class="heading">skills</h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="skill-group"><span class="skill-name">programming languages:</span><span class="skill"><span class="skill-item">Javascript</span><span class="skill-item">HTML</span><span class="skill-item">CSS</span></span></div>
           </div>
-        </section>
-        <section class="section-wrapper white-section">
-          <div class="heading-wrapper center">
-            <h2 class="heading">skills</h2>
+          <div class="col-sm-6">
+            <div class="skill-group"><span class="skill-name">frameworks & libraries:</span><span class="skill"><span class="skill-item">ReactJS</span><span class="skill-item">Redux</span><span class="skill-item">Redux-Saga</span><span class="skill-item">React Native</span><span class="skill-item">Immutable</span><span class="skill-item">VueJS</span></span></div>
           </div>
-          <hr class="divider">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="skill-group"><span class="skill-name">programming languages:</span><span class="skill"><span class="skill-item">Javascript</span></span></div>
-              <div class="skill-group"><span class="skill-name">frameworks & platforms:</span><span class="skill"><span class="skill-item">ReactJS</span><span class="skill-item">Redux</span><span class="skill-item">Redux-Saga</span><span class="skill-item">React Native</span><span class="skill-item">Immutable</span></span></div>
+        </div>
+      </section>
+      <section class="section-wrapper white-section">
+        <h2 class="heading">work experiences</h2>
+        <hr class="divider">
+        <div class="company-wrapper">
+          <h2>Sutrix Solutions</h2>
+          <p>May 2017 - Present
+            <div class="project-wrapper">
+              <h4 class="project-name"><span class="underline">Edetailing</span>(ReactJS, Redux, Redux-Saga, Immutable, Cordova, SQLite)</h4>
+              <ul class="tasks">
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>A mobile application that helps sales prepare the presentation and analytics informations to determine the marketing strategy for their clients.</li>
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>Interacted with the client to improve user experience of the application, collaborating closely with Back-end team to integrating API.</li>
+              </ul>
             </div>
-            <div class="col-sm-6">
-              <div class="skill-group"><span class="skill-name">version control:</span><span class="skill"><span class="skill-item">Git</span></span></div>
-              <div class="skill-group"><span class="skill-name">Others:</span><span class="skill"><span class="skill-item">Time management</span><span class="skill-item">Self-motivated</span><span class="skill-item">Team oriented</span></span></div>
+            <div class="project-wrapper">
+              <h4 class="project-name"><span class="underline">YogaWork</span>(React Native, Redux, Redux-Saga, Immutable)</h4>
+              <ul class="tasks">
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>A mobile application that help users plan and schedule suitable yoga classes, view ongoing promotions, as well as view location and contact information.</li>
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>Communicate with client and Project Mananager to clear requirements and ensure mobile app run smoothly on both Android And IOS.</li>
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>Config CI (Continuous Integration) for automation build, deploy.</li>
+              </ul>
             </div>
-          </div>
-        </section>
-        <section class="section-wrapper white-section">
-          <div class="heading-wrapper center">
-            <h2 class="heading">work experience</h2>
-          </div>
-          <hr class="divider">
-          <div class="company-wrapper">
-            <h2>Front end Developer at Sutrix Solutions</h2>
-            <p>May 2017 - Present
-              <div class="project-wrapper">
-                <h4 class="project-name"><span class="underline">Edetailing</span>(ReactJS, Redux, Redux-Saga, Immutable, Cordova, SQLite)</h4>
-                <ul class="tasks">
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Responsible for bringing mockups to life.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Collaborating closely with Back-end team to integrating API.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Discuss with team leader about technical issues to find the best solution.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Verify and fix bugs reported by QC team.</li>
-                </ul>
-              </div>
-              <div class="project-wrapper">
-                <h4 class="project-name"><span class="underline">YogaWork</span>(React Native, Redux, Redux-Saga, Immutable)</h4>
-                <ul class="tasks">
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Managing a team of 3 members, technical issues solving support.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Communicate with client and Project Mananager to clear requirements.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Config CI (Continuous Integration) for automation build, deploy.</li><i class="task-item"><i class="fas fa-plus fa-xs"></i>Verify and fix bugs reported by QC team.</i>
-                </ul>
-              </div>
-              <div class="project-wrapper">
-                <h4 class="project-name"><span class="underline">Laava</span>(ReactJS, Redux, GraphQL)</h4>
-                <ul class="tasks">
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Managing a team of 3 members, technical issues solving support.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Communicate with client and Project Mananager to clear requirements.</li>
-                  <li class="task-item"><i class="fas fa-plus fa-xs"></i>Research GrapesJS library for applying to project.</li><i class="task-item"><i class="fas fa-plus fa-xs"></i>Verify and fix bugs reported by QC team.</i>
-                </ul>
-              </div>
-            </p>
-          </div>
-        </section>
-      </div>
+            <div class="project-wrapper">
+              <h4 class="project-name"><span class="underline">Laava</span>(ReactJS, Redux, GraphQL)</h4>
+              <ul class="tasks">
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>A web application that help client's desinger to build HTML templates for mobile app. </li>
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>Communicate with client and Project Mananager to clear requirements and research GrapesJS library for applying to project.</li>
+              </ul>
+            </div>
+            <div class="project-wrapper">
+              <h4 class="project-name"><span class="underline">CanopyLab</span>(ReactJS, Redux, Redux-Thunk)</h4>
+              <ul class="tasks">
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>A learning platform on top of a social network structure with a feature similar to the major social network (Facebook). </li>
+                <li class="task-item"><i class="fas fa-plus fa-xs"></i>Communicate with client and Project Mananager to clear requirements and worked extensively with UI designer to make beautiful UI, easy to use.</li>
+              </ul>
+            </div>
+          </p>
+        </div>
+      </section>
     </div>
   </body>
   <script src="src/js/index.js"></script>
